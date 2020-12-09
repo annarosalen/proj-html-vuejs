@@ -91,21 +91,50 @@
     </main> <!--FINE PARTE CENTRALE-->
 
     <!-- ******************* FOOTER ************** -->
-    <footer>
+    <footer id="footer">
+      <div class="content-container">
 
         <!-- INDIRIZZO E SOCIAL -->
-      <div id="indirizzo">
+        <div id="contact">
+          <h4>Address</h4>
+          <ul>
+            <li v-for="(value,name) in contact">{{value}}</li>
+          </ul>
+          <ul id="social">
+            <li v-for="item in social"><a :href="item.link"><i :class="item.icon" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
 
-      </div>
+        <!-- NAV BAR FOOTER -->
+        <nav id="navbar-footer">
+          <div class="column">
+            <h4>Explore</h4>
+            <ul>
+              <li v-for="item in firstcolumn"><a :href="item.link">{{item.text}}</a></li>
+            </ul>
+          </div>
+          <div class="column second">
+            <h4></h4>
+            <ul>
+              <li v-for="item in secondcolumn"><a :href="item.link">{{item.text}}</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Information</h4>
+            <ul>
+              <li v-for="item in thirdcolumn"><a :href="item.link">{{item.text}}</a></li>
+            </ul>
+          </div>
 
-      <!-- NAV BAR FOOTER -->
-      <nav id="navbar-footer">
+        </nav>
 
-      </nav>
-      
-      <div id="copyright">
 
-      </div>
+        <div id="copyright">
+          <span><i class="fa fa-copyright" aria-hidden="true"></i>2020 MaxCoach. All Rights Reserved.</span>
+        </div>
+
+      </div> <!--fine content container-->
+
 
     </footer>
 

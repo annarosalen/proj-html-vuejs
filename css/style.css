@@ -4,6 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: Lato;
+}
 
 li{
   list-style: none;
@@ -14,6 +17,10 @@ a{
   color: black;
 }
 
+.content-container{
+  width: 1000px;
+  border: solid 1px white;
+}
 /********* INTESTAZIONE ******/
 header {
   /* min-height: 500px; */
@@ -103,15 +110,68 @@ header {
 
 /******* FOOTER *******/
 footer{
+  display: flex;
+  justify-content: center;
   min-height: 350px;
+  width: 100%;
+  color: lightgray;
   /* debug */
-  background-color: black;
+  background-color: #171520;
 }
 
-#indirizzo, #navbar-footer{
+footer a{
+  color: lightgray;
+}
+
+footer h4{
+  color: white;
+}
+
+#contact li{
+  padding-top: 10px;
+}
+
+#contact, #navbar-footer{
   width: 50%;
   min-height: 250px;
   float: left;
+  font-size: 13px;
+  padding-top:50px;
   /* debug */
   border: solid 1px white;
+}
+
+#social li{
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+#navbar-footer{
+  display: flex;
+}
+
+#navbar-footer .column{
+  padding-right: 40px;
+}
+
+.column ul{
+  padding-top: 10px;
+}
+
+.second ul{
+  padding-top: 26px;
+}
+
+.column li{
+  padding-top: 10px;
+}
+
+#copyright {
+  min-height: calc(350px - 250px);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
 }
