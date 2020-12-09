@@ -1,25 +1,117 @@
+/* regole generali */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-header {
-  min-height: 500px;
-  background-color: red;
+li{
+  list-style: none;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/********* INTESTAZIONE ******/
+header {
+  /* min-height: 500px; */
+  /* debug */
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAV BAR */
+#navbar-header{
+  min-height: 60px;
+  width: 1270px;
+}
+
+#nav-menu, #opzioni{
+  min-height: 60px;
+  width: 40%;
+  float: left;
+  display: flex;
+  align-items:center;
+  /* debug */
+  border: solid 1px black;
+}
+
+#nav-menu li{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+#logo{
+  min-height: 60px;
+  width: 20%;
+  float: left;
+  display: flex;
+  align-items:center;
+  /* debug */
+  border: solid 1px black;
+}
+
+#logo{
+  justify-content: center;
+}
+
+#logo img{
+  height: 20px;
+}
+
+#opzioni{
+  justify-content:flex-end;
+}
+
+#opzioni a{
+  padding-right: 20px;
+}
+
+#opzioni #search{
+  padding: 5px;
+  background-color: #e2e2e0;
+  border-radius: 3px;
+}
+
+#search input{
+  background-color: #e2e2e0;
+  border: none;
+  outline: none;
+}
+
+/* JUMBOTRON */
+#jumbotron{
+  min-height: calc(500px - 60px);
+}
+
+/******* PARTE CENTRALE *******/
 .container{
   min-height: 500px;
+  /* debug */
   border: 1px solid black;
 }
 
 #subscribe-form{
   min-height: 350px;
+  /* debug */
   border: 1px solid black;
 }
 
+
+/******* FOOTER *******/
 footer{
   min-height: 350px;
+  /* debug */
   background-color: black;
+}
+
+#indirizzo, #navbar-footer{
+  width: 50%;
+  min-height: 250px;
+  float: left;
+  /* debug */
+  border: solid 1px white;
 }

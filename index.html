@@ -18,19 +18,27 @@
       <nav id="navbar-header">
 
         <nav id="nav-menu">
+          <ul>
+            <li v-for="item in menu"><a :href="item.link">{{item.text}}</a><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+          </ul>
 
         </nav>
         <div id="logo">
-
+          <img :src="logo" alt="">
         </div>
         <div id="opzioni">
-
+          <a :href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          <a :href="login"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+          <div id="search">
+            <input  type="search" name="" value="" v-model="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
         </div>
 
       </nav><!-- FINE NAV BAR -->
 
       <!-- JUMBOTRON -->
-      <section>
+      <section id="jumbotron">
         <!-- div in absolute con icone -->
         <div>
 
@@ -86,7 +94,7 @@
     <footer>
 
         <!-- INDIRIZZO E SOCIAL -->
-      <div>
+      <div id="indirizzo">
 
       </div>
 
@@ -94,6 +102,10 @@
       <nav id="navbar-footer">
 
       </nav>
+      
+      <div id="copyright">
+
+      </div>
 
     </footer>
 
