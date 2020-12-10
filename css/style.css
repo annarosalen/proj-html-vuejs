@@ -200,8 +200,8 @@ header {
 }
 
 .text-sections p{
-  text-align: justify;
-  line-height: 17px;
+  /* text-align: justify; */
+  line-height: 20px;
   padding-bottom: 20px;
 }
 
@@ -341,14 +341,7 @@ header {
   display: inline;
 }
 
-#subscribe-form{
-  min-height: 350px;
-  /* debug */
-  border: 1px solid black;
-}
-
 /* <!-- QUARTA SEZIONE testimonials --> */
-
 #testimonials{
   position: relative;
   /* background-color: red; */
@@ -374,7 +367,73 @@ header {
   height: 500px;
 }
 
+/* <!-- QUINTA SEZIONE team --> */
 
+#team-left{
+  width: 60%;
+  height: 100%;
+  float:left;
+  text-align: right;
+  padding-top: 50px;
+  position: relative;
+  /* debug */
+  border: solid 1px black;
+
+}
+
+#phototeam{
+  height: 450px;
+  position: relative;
+  z-index:20;
+}
+
+#shape07{
+  height: 150px;
+  position: absolute;
+  bottom: 50px;
+  right: 135px;
+  z-index:10;
+}
+
+#shape05{
+  height: 150px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  z-index:10;
+}
+
+#shape01{
+  position: absolute;
+  left: -200px;
+  bottom: 100px;
+}
+
+#team-right{
+  width: 40%;
+  height: 100%;
+  float: left;
+  padding-top: 150px;
+  padding-right: 50px;
+}
+
+#team-right .text-sections button{
+  padding: 15px 50px;
+  color: white ;
+  background-color: #1fad95;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor:pointer;
+}
+
+
+#subscribe-form{
+  min-height: 350px;
+  /* debug */
+  border: 1px solid black;
+}
 /******* FOOTER *******/
 footer{
   display: flex;
