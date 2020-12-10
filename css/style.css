@@ -17,6 +17,14 @@ a{
   color: black;
 }
 
+.container{
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  /* debug */
+  border: 1px solid black;
+}
+
 .content-container{
   width: 1000px;
   border: solid 1px red;
@@ -134,14 +142,9 @@ header {
 }
 
 /******* PARTE CENTRALE *******/
-.container{
-  min-height: 650px;
-  display: flex;
-  justify-content: center;
-  /* debug */
-  border: 1px solid black;
-}
 
+
+/* <!-- PRIMA SEZIONE work colture --> */
 #work-colture #wc-left,#work-colture #wc-right{
   width: 50%;
   padding: 130px 150px 100px 0;
@@ -169,7 +172,7 @@ header {
   padding: 20px 0;
 }
 
-.text-sections .lighter{
+.lighter{
   font-weight: lighter;
   color: #1fad95;
 }
@@ -241,6 +244,33 @@ header {
   font-size: 15px;
   font-weight: bold;
   color: gray;
+}
+
+/*  SECONDA SEZIONE upgrade your life */
+
+/* TERZA SEZIONE courses con corouseL */
+#courses{
+  background-color: #e2e2e0;
+}
+
+.titolo{
+  min-height: 20%;
+  /* debug */
+  border: 1px solid black;
+  text-align: center;
+}
+
+#carousel{
+  min-height: 70%;
+  /* debug */
+  border: 1px solid black;
+}
+
+#carousel .card{
+  width: calc(100% / 3);
+  /* debug */
+  border: 1px solid black;
+  height: 200px;
 }
 
 #subscribe-form{
