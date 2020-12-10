@@ -50,9 +50,31 @@ header {
   align-items:center;
 }
 
-#nav-menu li{
+.lidrop{
   display: inline-block;
   padding-right: 20px;
+  position: relative;
+}
+
+.dropdown{
+  display:none;
+  position: absolute;
+  top: 30px;
+  left:0;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lidrop:hover .dropdown{
+  display: block;
+  z-index:50;
+}
+
+.dropdown li{
+  padding-bottom: 10px;
 }
 
 #logo{
@@ -102,6 +124,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 40;
 }
 
 #icone-jumbo{

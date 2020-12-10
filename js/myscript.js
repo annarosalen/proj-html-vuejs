@@ -8,27 +8,111 @@ var header= new Vue({
     menu: [
       {
         text: "Home",
-        link: "#"
+        link: "#",
+        dropdown:[
+          {
+            droptext: "Opzione 1",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 2",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 3",
+            droplink: "#",
+          }
+        ]
       },
       {
         text: "Pages",
-        link: "#"
+        link: "#",
+        dropdown:[
+          {
+            droptext: "Opzione 1",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 2",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 3",
+            droplink: "#",
+          }
+        ]
       },
       {
         text: "Courses",
-        link: "#"
+        link: "#",
+        dropdown:[
+          {
+            droptext: "Opzione 1",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 2",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 3",
+            droplink: "#",
+          }
+        ]
       },
       {
         text: "Features",
-        link: "#"
+        link: "#",
+        dropdown:[
+          {
+            droptext: "Opzione 1",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 2",
+            link: "#",
+          },
+          {
+            droptext: "Opzione 3",
+            droplink: "#",
+          }
+        ]
       },
       {
         text: "Blog",
-        link: "#"
+        link: "#",
+        dropdown:[
+          {
+            droptext: "Opzione 1",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 2",
+            link: "#",
+          },
+          {
+            droptext: "Opzione 3",
+            droplink: "#",
+          }
+        ]
       },
       {
         text: "Shop",
-        link: "#"
+        link: "#",
+        dropdown:[
+          {
+            droptext: "Opzione 1",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 2",
+            droplink: "#",
+          },
+          {
+            droptext: "Opzione 3",
+            droplink: "#",
+          }
+        ]
       }
     ]
   }

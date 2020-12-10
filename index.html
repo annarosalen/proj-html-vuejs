@@ -19,10 +19,20 @@
 
         <nav id="nav-menu">
           <ul>
-            <li v-for="item in menu"><a :href="item.link">{{item.text}}</a><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+            <li class="lidrop" v-for="item in menu">
+              <a :href="item.link">{{item.text}}</a>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <nav class="dropdown">
+                <ul>
+                  <li v-for="drop in item.dropdown">
+                    <a :href="drop.droplink" >{{drop.droptext}}</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
           </ul>
-
         </nav>
+
         <div id="logo">
           <img :src="logo" alt="">
         </div>
