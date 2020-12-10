@@ -152,7 +152,6 @@ header {
   /* debug */
   border: solid 1px black;
   height: 80%;
-
 }
 
 .text-sections{
@@ -255,22 +254,67 @@ header {
 
 .titolo{
   min-height: 20%;
-  /* debug */
-  border: 1px solid black;
   text-align: center;
+
 }
 
 #carousel{
-  min-height: 70%;
-  /* debug */
-  border: 1px solid black;
+  min-height: 65%;
 }
 
 #carousel .card{
-  width: calc(100% / 3);
-  /* debug */
-  border: 1px solid black;
-  height: 200px;
+  width: calc((100% / 3) - 20px) ;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.card img{
+  height: 180px;
+}
+
+.card .description{
+  padding: 30px 70px 30px 30px;
+  background-color: white;
+}
+
+.description h3{
+  font-weight: bold;
+  color: #1fad95;
+  font-size: 20px;
+}
+
+.description h5{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.description span{
+  font-size: 13px;
+  padding-right: 20px;
+  color: grey;
+}
+
+.description span i{
+  padding-right: 3px;
+}
+
+#circle{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.moreinfo{
+  text-align: center;
+  padding: 0 250px ;
+  line-height: 20px;
+}
+
+.moreinfo p{
+  display: inline;
 }
 
 #subscribe-form{
@@ -278,6 +322,8 @@ header {
   /* debug */
   border: 1px solid black;
 }
+
+
 
 /******* FOOTER *******/
 footer{
