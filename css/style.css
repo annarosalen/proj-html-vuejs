@@ -275,6 +275,7 @@ header {
   background-color: #e2e2e0;
 }
 
+
 .titolo{
   min-height: 20%;
   text-align: center;
@@ -346,6 +347,32 @@ header {
   border: 1px solid black;
 }
 
+/* <!-- QUARTA SEZIONE testimonials --> */
+
+#testimonials{
+  position: relative;
+  /* background-color: red; */
+}
+
+#ts-left{
+  width: 40%;
+  height: 100%;
+  padding: 200px 70px 0 0;
+  float: left;
+  /* debug */
+  /* border: solid 1px black; */
+}
+
+
+#ts-right{
+  float: left;
+  width: 60%;
+  padding-top: 50px;
+}
+
+#ts-right img{
+  height: 500px;
+}
 
 
 /******* FOOTER *******/
