@@ -120,15 +120,18 @@ var header= new Vue({
   },
 
   mounted: function(){
+    // al caricamento della pagina il dropdown non è visibile
     this.indexMenu = "";
   },
 
   methods: {
 
+    // al click mostra dropdown
     showDrop:function(index){
       this.indexMenu = index;
     },
 
+    // mouseleave nascondi dropdown
     hideDrop: function(){
       this.indexMenu = "";
     }
@@ -137,6 +140,8 @@ var header= new Vue({
 
 });
 
+// **************************************************************
+// inserimento caraousel dinamico da finire
 var carousel = new Vue({
   el:"#courses",
   data: {
@@ -178,18 +183,12 @@ var carousel = new Vue({
       },
     ]
   },
-  
-  method: {
-    nextFoto: function (){
-      this.fotoIndex = this.fotoIndex + 1;
 
-      if (this.fotoIndex > (this.foto.length - 1)) {
-        this.fotoIndex = 0;
-      }
-    },
+  method: {
   }
 });
 
+// **************************************************************
 var footer= new Vue({
   el:"#footer",
   data: {

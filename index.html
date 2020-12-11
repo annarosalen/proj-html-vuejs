@@ -21,21 +21,23 @@
 
         <nav id="nav-menu">
           <ul>
+
             <li class="lidrop" v-for="(item, index) in menu" @click="showDrop(index)" >
               <a :href="item.link">{{item.text}}</a>
               <i class="fa fa-chevron-down" aria-hidden="true"></i>
 
+              <!-- dropdown -->
               <nav class="dropdown" :class="{active: index===indexMenu}" @mouseleave="hideDrop">
                 <ul>
                   <li v-for="drop in item.dropdown">
                     <a :href="drop.droplink">{{drop.droptext}}</a>
                   </li>
                 </ul>
-              </nav>
+              </nav> <!--fine dropdown-->
+            </li><!--fine lidrop-->
 
-            </li>
           </ul>
-        </nav>
+        </nav><!--fine nav-menu-->
 
         <div id="logo">
           <img :src="logo" alt="">
@@ -43,7 +45,7 @@
 
         <div id="opzioni">
           <a id="cart" :href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-          <a id="user" :href="login"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+          <a id="user" :href="login" datacount="0"><i class="fa fa-user-circle" aria-hidden="true" ></i></a>
           <div id="search">
             <input  type="search" v-model="search" placeholder="Search...">
             <i class="fa fa-search" aria-hidden="true"></i>
@@ -54,7 +56,7 @@
 
       <!-- JUMBOTRON -->
       <section id="jumbotron">
-        <!-- div in absolute con icone -->
+        <!-- icone laterali -->
         <div id="icone-jumbo">
           <i class="fa fa-paper-plane" aria-hidden="true"></i>
           <i class="fa fa-life-ring" aria-hidden="true"></i>
@@ -69,7 +71,7 @@
         </div>
       </section> <!--FINE JUMBOTRON-->
 
-    </header> <!--FINE INTESTAZIONE-->
+    </header> <!--*********FINE INTESTAZIONE********-->
 
     <!--******************** PARTE CENTRALE ************* -->
     <main>
@@ -110,7 +112,7 @@
           </div><!--fine wc-down-->
 
         </div> <!--fine content-container-->
-      </section>
+      </section><!--fine prima sezione-->
 
       <!-- SECONDA SEZIONE upgrade your life -->
       <section id="upgrade" class="container">
@@ -129,9 +131,9 @@
               <a href="#"><strong>Download free guidebook</strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
-        </div>
 
-      </section >
+        </div><!--fine content-container-->
+      </section ><!--fine seconda sezione-->
 
       <!-- TERZA SEZIONE courses con corousel-->
       <section id="courses" class="container">
@@ -196,13 +198,14 @@
             <p>Control your personal preference settings to get notified about appropriate courses.</p>
             <span><a href="#"><strong>View all courses </strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></span>
           </div>
-        </div>
 
-      </section >
+        </div><!--fine content-container-->
+      </section ><!--fine terza sezione-->
 
       <!-- QUARTA SEZIONE testimonials -->
       <section id="testimonials" class="container">
         <div class="content-container">
+
           <div id="ts-left">
             <div class="text-sections">
               <h4>TESTIMONIALS</h4>
@@ -211,22 +214,25 @@
               <a href="#"><strong>View All</strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
+
           <div id="ts-right">
             <img src="img/testimonials.png" alt="">
           </div>
-        </div>
 
-      </section >
+        </div><!--fine content-container-->
+      </section ><!--fine quarta sezione-->
 
       <!-- QUINTA SEZIONE team -->
       <section id="team " class="container">
         <div  class="content-container">
+
           <div id="team-left">
             <img id="phototeam" src="img/team.png" alt="">
             <img id="shape07" src="img/shape07.png" alt="">
             <img id="shape05" src="img/shape05.png" alt="">
             <img id="shape01" src="img/shape01.png" alt="">
           </div>
+
           <div id="team-right">
             <div class="text-sections">
               <h4>EVERYTHING IN <strong>MAXCOACH</strong></h4>
@@ -235,9 +241,9 @@
               <button type="button" name="button">Get Free Guide</button>
             </div>
           </div>
-        </div>
 
-      </section>
+        </div><!--fine content-container-->
+      </section><!--fine quinta sezione-->
 
       <!-- SESTA SEZIONE post blog -->
       <section id="blog" class="container">
@@ -246,6 +252,7 @@
             <h4>READ FOR MORE JOYMENT</h4>
             <h2>Latest From <span class="lighter">Our Blogs</span> </h2>
           </div>
+
           <div id="post-blog">
             <div class="card">
               <img src="img/artist03.jpeg" alt="">
@@ -275,9 +282,9 @@
               </div>
             </div>
           </div>
-        </div>
 
-      </section>
+        </div><!--fine content-container-->
+      </section><!--fine sesta sezione-->
 
       <!-- SETTIMA SEZIONE FORM -->
       <section id="subscribe" class="container">
@@ -286,6 +293,7 @@
             <h2>Subscribe <span class="lighter">Newsletter</span> </h2>
             <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
           </div>
+
           <div id="div-form">
             <form>
               <input type="text" name="" value="" placeholder="Enter your email">
@@ -293,8 +301,9 @@
             </form>
           </div>
           <img id="shape02-sub" src="img/shape02.png" alt="shape02">
-        </div>
-      </section>
+
+        </div><!--fine content-container-->
+      </section><!--fine settima sezione-->
 
     </main> <!--FINE PARTE CENTRALE-->
 
@@ -333,7 +342,6 @@
               <li v-for="item in thirdcolumn"><a :href="item.link">{{item.text}}</a></li>
             </ul>
           </div>
-
         </nav>
 
 
@@ -342,8 +350,6 @@
         </div>
 
       </div> <!--fine content container-->
-
-
     </footer>
 
 
