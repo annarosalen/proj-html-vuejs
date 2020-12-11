@@ -5,7 +5,8 @@
     <title>Distance Learning</title>
     <script src="https://use.fontawesome.com/617605346e.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -44,7 +45,7 @@
           <a id="cart" :href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
           <a id="user" :href="login"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
           <div id="search">
-            <input  type="search" name="" value="" v-model="search">
+            <input  type="search" v-model="search" placeholder="Search...">
             <i class="fa fa-search" aria-hidden="true"></i>
           </div>
         </div>
@@ -55,7 +56,10 @@
       <section id="jumbotron">
         <!-- div in absolute con icone -->
         <div id="icone-jumbo">
-
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          <i class="fa fa-life-ring" aria-hidden="true"></i>
+          <i class="fa fa-book" aria-hidden="true"></i>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </div>
         <!-- testo centrale -->
         <div id="centro-jumbo">
@@ -131,14 +135,25 @@
 
       <!-- TERZA SEZIONE courses con corousel-->
       <section id="courses" class="container">
-        <div class="content-container">
+        <div id="curva" class="content-container">
 
           <div class="text-sections titolo">
             <h4>JOIN MAXCOACH AT BEST</h4>
             <h2>Latest Online <span class="lighter">Courses</span> </h2>
           </div>
-
           <div id="carousel">
+
+            <!-- inserimento Vue -->
+            <!-- <div class="card" v-for="item in cards">
+              <img :src="item.img" alt="">
+              <div class="description">
+                <h3>{{item.price}}</h3>
+                <h5>{{item.title}}</h5>
+                <span><i class="fa fa-file-text-o" aria-hidden="true"></i>{{item.lessons}}</span>
+                <span><i class="fa fa-user-o" aria-hidden="true"></i>item.students</span>
+              </div>
+            </div> -->
+
             <div class="card">
               <img src="img/course02.jpg" alt="">
               <div class="description">
@@ -166,12 +181,15 @@
                 <span><i class="fa fa-user-o" aria-hidden="true"></i>62 Students</span>
               </div>
             </div>
-          </div>
+
+          </div> <!--fine carousel-->
+
           <div id="circle">
-            <i class="fas fa-circle-o first"></i>
-            <i class="fas fa-circle-o"></i>
-            <i class="fas fa-circle-o"></i>
-            <i class="fas fa-circle-o last"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
           </div>
 
           <div class="moreinfo">
@@ -274,6 +292,7 @@
               <button type="button" name="button">Subscribe</button>
             </form>
           </div>
+          <img id="shape02-sub" src="img/shape02.png" alt="shape02">
         </div>
       </section>
 

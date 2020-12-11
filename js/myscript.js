@@ -137,6 +137,59 @@ var header= new Vue({
 
 });
 
+var carousel = new Vue({
+  el:"#courses",
+  data: {
+    cards: [
+      {
+        img: "img/course02.jpg",
+        price: "$40.00",
+        title: "Learning to Write as a Professional Author",
+        lessons: "20 Lessons",
+        students: "50 Students"
+      },
+      {
+        img: "img/course01.jpg",
+        price: "$0.00",
+        title: "Customer-centric Info-Tech Strategies",
+        lessons: "24 Lessons",
+        students: "769 Students"
+      },
+      {
+        img: "img/course03.jpg",
+        price: "$19.00",
+        title: "Open Programming Courses for Everyone: Python",
+        lessons: "17 Lessons",
+        students: "62 Students"
+      },
+      {
+        img: "img/course05.jpg",
+        price: "$40.00",
+        title: "Learning to Write as a Professional Author",
+        lessons: "20 Lessons",
+        students: "50 Students"
+      },
+      {
+        img: "img/course06.jpg",
+        price: "$40.00",
+        title: "Learning to Write as a Professional Author",
+        lessons: "20 Lessons",
+        students: "50 Students"
+      },
+    ]
+  },
+  
+  method: {
+    nextFoto: function (){
+      this.fotoIndex = this.fotoIndex + 1;
+
+      if (this.fotoIndex > (this.foto.length - 1)) {
+        this.fotoIndex = 0;
+      }
+    },
+  }
+});
+
 var footer= new Vue({
   el:"#footer",
   data: {

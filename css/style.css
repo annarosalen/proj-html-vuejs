@@ -19,16 +19,13 @@ a{
 }
 
 .container{
-  min-height: 650px;
+  min-height: 700px;
   display: flex;
   justify-content: center;
-  /* debug */
-  border: 1px solid black;
 }
 
 .content-container{
   width: 1200px;
-  border: solid 1px red;
 }
 /********* INTESTAZIONE ******/
 header {
@@ -125,6 +122,7 @@ header {
   border: none;
   outline: none;
   width: 250px;
+  padding-left: 10px;
 }
 
 #search .fa-search{
@@ -149,10 +147,15 @@ header {
   position: fixed;
   right: 0;
   top: 100px;
-  /* debug */
-  min-height: 40px;
-  width: 50px;
+  text-align: center;
+  padding:10px;
   background-color: white;
+}
+
+#icone-jumbo i{
+  font-size: 18px;
+  display: block;
+  padding-bottom: 10px;
 }
 
 #centro-jumbo{
@@ -195,9 +198,6 @@ header {
   height: 80%;
   padding: 130px 180px 100px 0;
   float: left;
-  /* debug */
-  border: solid 1px black;
-
 }
 
 .text-sections{
@@ -241,16 +241,14 @@ header {
 }
 
 #wc-right #coach{
-  width: 500px;
   z-index: 200;
   position: relative;
 }
 
 #wc-right #about{
-  height: 150px;
   position: absolute;
-  top: 60px;
-  right: 50px;
+  top: 40px;
+  right: -40px;
   border-radius: 5px;
   z-index: 300;
 }
@@ -263,10 +261,9 @@ header {
 }
 
 #wc-right #shape02{
-  height: 100px;
   position: absolute;
-  bottom: 40px;
-  right: 150px;
+  bottom: -10px;
+  right: 90px;
   z-index: 250;
 }
 
@@ -284,14 +281,17 @@ header {
 
 .rates h3{
   color:#1fad95;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: 800;
   padding-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 .rates span{
   font-size: 15px;
   font-weight: bold;
   color: gray;
+  letter-spacing: 2px;
 }
 
 /*  SECONDA SEZIONE upgrade your life */
@@ -301,8 +301,6 @@ header {
   float: left;
   padding-top: 100px;
   position: relative;
-  /* debug */
-  border: solid 1px black;
 }
 
 
@@ -315,7 +313,7 @@ header {
 #youtube{
   height: 50px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
   z-index:60;
@@ -353,13 +351,16 @@ header {
 .titolo{
   min-height: 20%;
   text-align: center;
+  padding-top: 20px;
 }
 
 #carousel{
   min-height: 65%;
+  display: flex;
 }
 
 .card{
+  height: 100%;
   width: calc((100% / 3) - 20px) ;
   float: left;
   display: flex;
@@ -367,11 +368,22 @@ header {
   align-items: center;
   border-radius: 5px;
   margin-right: 20px;
+  overflow: hidden;
 }
 
 .card img{
-  /* height: 200px; */
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: transform ease 1s;
+}
+
+.card:hover img{
+  transform: scale(1.1);
+}
+
+#carousel .card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card .description{
@@ -379,6 +391,8 @@ header {
   height: 200px;
   padding: 30px 30px 38px;
   background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .description h3{
@@ -412,13 +426,17 @@ header {
 
 #circle{
   text-align: center;
-  margin-top: 5px;
+}
+
+#circle i{
+  color: lightgray;
+  font-size: 15px;
 }
 
 .moreinfo{
   height: 15%;
   text-align: center;
-  padding: 10px 350px ;
+  padding: 20px 350px 0;
   line-height: 20px;
 }
 
@@ -446,7 +464,7 @@ header {
 }
 
 #ts-right img{
-  height: 500px;
+  height: 600px;
 }
 
 /* <!-- QUINTA SEZIONE team --> */
@@ -469,7 +487,7 @@ header {
 #shape07{
   height: 150px;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   right: 240px;
   z-index:10;
 }
@@ -542,6 +560,7 @@ header {
   /* <!-- SETTIMA SEZIONE FORM --> */
 #subscribe{
   min-height: 350px;
+  position: relative;
 }
 
 #subscribe .content-container{
@@ -557,16 +576,19 @@ header {
 
 #subscribe #div-form{
   background-color: lightgray;
+  border-radius: 5px;
 }
 
 #subscribe #div-form input{
   min-height: 50px;
   width: 300px;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
   background-color: lightgray;
   outline: none;
   border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 #subscribe #div-form button{
@@ -578,6 +600,8 @@ header {
   font-weight:bold;
   background-color: #1fad95;
   cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #subscribe #div-form button:hover{
@@ -585,6 +609,11 @@ header {
   color: #1fad95;
 }
 
+#shape02-sub{
+  position: absolute;
+  bottom: 50px;
+  right: 200px;
+}
 /******* FOOTER *******/
 footer{
   display: flex;
@@ -614,6 +643,10 @@ footer h4{
   font-size: 16px;
   padding-top:50px;
   line-height: 2em;
+}
+
+#navbar-footer{
+  padding-left: 50px;
 }
 
 #social li{
