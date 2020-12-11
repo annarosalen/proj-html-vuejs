@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 body{
-  font-family: Lato;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
 
 li{
@@ -26,7 +27,7 @@ a{
 }
 
 .content-container{
-  width: 1000px;
+  width: 1200px;
   border: solid 1px red;
 }
 /********* INTESTAZIONE ******/
@@ -39,15 +40,24 @@ header {
 /* NAV BAR */
 #navbar-header{
   flex-basis: 60px;
-  width: 1270px;
+  width: 100%;
 }
 
 #nav-menu, #opzioni{
   min-height: 60px;
-  width: 40%;
+  width: 45%;
   float: left;
   display: flex;
   align-items:center;
+}
+
+#nav-menu{
+  padding-left: 80px;
+}
+
+#nav-menu .fa-chevron-down{
+  font-size: 13px;
+  padding-left: 5px;
 }
 
 .lidrop{
@@ -79,7 +89,7 @@ header {
 
 #logo{
   min-height: 60px;
-  width: 20%;
+  width: 10%;
   float: left;
   display: flex;
   align-items:center;
@@ -90,19 +100,22 @@ header {
 }
 
 #logo img{
-  height: 20px;
+  height: 30px;
 }
 
 #opzioni{
   justify-content:flex-end;
+  padding-right: 80px;
 }
 
 #opzioni a{
   padding-right: 20px;
+  font-size: 20px;
 }
 
+
 #opzioni #search{
-  padding: 5px;
+  padding: 10px;
   background-color: #e2e2e0;
   border-radius: 3px;
 }
@@ -111,11 +124,16 @@ header {
   background-color: #e2e2e0;
   border: none;
   outline: none;
+  width: 250px;
+}
+
+#search .fa-search{
+  color:#1fad95;
 }
 
 /* JUMBOTRON */
 #jumbotron{
-  min-height: 555px;
+  min-height: 554px;
   width: 100%;
   background-image: url(../img/home-3-hero-bg.jpg);
   background-size: contain;
@@ -128,7 +146,7 @@ header {
 }
 
 #icone-jumbo{
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 100px;
   /* debug */
@@ -142,18 +160,22 @@ header {
   text-align: center;
 }
 
+#centro-jumbo h2{
+  font-size: 25px;
+}
+
 #centro-jumbo h1{
-  font-size: 50px;
+  font-size: 60px;
   font-weight: lighter;
   padding-top: 10px;
   padding-bottom: 15px;
 }
 
 #centro-jumbo button{
-  padding: 15px 25px;
+  padding: 18px 32px;
   color: #1fad95;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 8px;
   border: none;
   cursor:pointer;
@@ -170,11 +192,12 @@ header {
 /* <!-- PRIMA SEZIONE work colture --> */
 #work-colture #wc-left,#work-colture #wc-right{
   width: 50%;
-  padding: 130px 150px 100px 0;
+  height: 80%;
+  padding: 130px 180px 100px 0;
   float: left;
   /* debug */
   border: solid 1px black;
-  height: 80%;
+
 }
 
 .text-sections{
@@ -185,10 +208,12 @@ header {
 
 .text-sections h4{
   font-weight: lighter;
+  font-size: 15px;
 }
 
 .text-sections h2{
-  font-size: 35px;
+  font-size: 48px;
+  line-height: 1.17em;
   font-weight: 600;
   color: black;
   padding: 20px 0;
@@ -200,8 +225,9 @@ header {
 }
 
 .text-sections p{
-  /* text-align: justify; */
-  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6em;
   padding-bottom: 20px;
 }
 
@@ -224,7 +250,7 @@ header {
   height: 150px;
   position: absolute;
   top: 60px;
-  right: -60px;
+  right: 50px;
   border-radius: 5px;
   z-index: 300;
 }
@@ -232,15 +258,15 @@ header {
 #wc-right #greendots{
   position: absolute;
   top: 75px;
-  right: 30px;
+  right: 130px;
   z-index: 100;
 }
 
 #wc-right #shape02{
   height: 100px;
   position: absolute;
-  bottom: 0;
-  right: 50px;
+  bottom: 40px;
+  right: 150px;
   z-index: 250;
 }
 
@@ -269,38 +295,89 @@ header {
 }
 
 /*  SECONDA SEZIONE upgrade your life */
+#upgrade-left{
+  width: 60%;
+  height: 100%;
+  float: left;
+  padding-top: 100px;
+  position: relative;
+  /* debug */
+  border: solid 1px black;
+}
+
+
+#video{
+  position: relative;
+  height: 400px;
+  z-index:50;
+}
+
+#youtube{
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index:60;
+}
+
+#up-shape07{
+  height: 150px;
+  position: absolute;
+  bottom: 100px;
+  right: 110px;
+  z-index: 40;
+}
+
+#up-shape05{
+  height: 150px;
+  position: absolute;
+  top: 150px;
+  left: -80px;
+  z-index: 40;
+}
+
+#upgrade-right{
+  width: 40%;
+  height: 100%;
+  float: left;
+  padding-top:150px;
+
+}
 
 /* TERZA SEZIONE courses con corouseL */
 #courses{
   background-color: #e2e2e0;
 }
 
-
 .titolo{
   min-height: 20%;
   text-align: center;
-
 }
 
 #carousel{
   min-height: 65%;
 }
 
-#carousel .card{
+.card{
   width: calc((100% / 3) - 20px) ;
   float: left;
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  align-items: center;
   border-radius: 5px;
+  margin-right: 20px;
 }
 
 .card img{
-  height: 180px;
+  /* height: 200px; */
+  width: 100%;
 }
 
 .card .description{
-  padding: 30px 70px 30px 30px;
+  width: 100%;
+  height: 200px;
+  padding: 30px 30px 38px;
   background-color: white;
 }
 
@@ -313,13 +390,20 @@ header {
 .description h5{
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1.6;
+}
+
+.description h5:hover{
+  color:#1fad95;
 }
 
 .description span{
   font-size: 13px;
   padding-right: 20px;
   color: grey;
+  margin-top: 30px;
 }
 
 .description span i{
@@ -328,12 +412,13 @@ header {
 
 #circle{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .moreinfo{
+  height: 15%;
   text-align: center;
-  padding: 0 250px ;
+  padding: 10px 350px ;
   line-height: 20px;
 }
 
@@ -344,7 +429,6 @@ header {
 /* <!-- QUARTA SEZIONE testimonials --> */
 #testimonials{
   position: relative;
-  /* background-color: red; */
 }
 
 #ts-left{
@@ -352,8 +436,6 @@ header {
   height: 100%;
   padding: 200px 70px 0 0;
   float: left;
-  /* debug */
-  /* border: solid 1px black; */
 }
 
 
@@ -368,7 +450,6 @@ header {
 }
 
 /* <!-- QUINTA SEZIONE team --> */
-
 #team-left{
   width: 60%;
   height: 100%;
@@ -376,14 +457,12 @@ header {
   text-align: right;
   padding-top: 50px;
   position: relative;
-  /* debug */
-  border: solid 1px black;
-
 }
 
 #phototeam{
   height: 450px;
   position: relative;
+  right: 100px;
   z-index:20;
 }
 
@@ -391,7 +470,7 @@ header {
   height: 150px;
   position: absolute;
   bottom: 50px;
-  right: 135px;
+  right: 240px;
   z-index:10;
 }
 
@@ -399,14 +478,14 @@ header {
   height: 150px;
   position: absolute;
   top: 200px;
-  left: 0;
+  left: 30px;
   z-index:10;
 }
 
 #shape01{
   position: absolute;
-  left: -200px;
-  bottom: 100px;
+  left: -100px;
+  bottom: 150px;
 }
 
 #team-right{
@@ -428,20 +507,91 @@ header {
   cursor:pointer;
 }
 
-
-#subscribe-form{
-  min-height: 350px;
-  /* debug */
-  border: 1px solid black;
+#team-right button:hover{
+  background-color: purple;
+  color: #1fad95;
 }
+/* <!-- SESTA SEZIONE post blog --> */
+
+#blog{
+  background-color:#e2e2e0;
+}
+#post-blog{
+  min-height: 65%;
+}
+
+#post-blog .card img{
+  border-radius: 10px;
+}
+
+#post-blog .description{
+  padding: 30px 0 20px;
+  background-color: #e2e2e0;
+}
+
+#post-blog .description h3{
+  color: grey;
+  font-size: 15px;
+}
+
+#post-blog .description h5{
+  font-size: 24px;
+}
+
+
+  /* <!-- SETTIMA SEZIONE FORM --> */
+#subscribe{
+  min-height: 350px;
+}
+
+#subscribe .content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#subscribe .titolo{
+  padding: 0 300px;
+}
+
+#subscribe #div-form{
+  background-color: lightgray;
+}
+
+#subscribe #div-form input{
+  min-height: 50px;
+  width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: lightgray;
+  outline: none;
+  border: none;
+}
+
+#subscribe #div-form button{
+  min-height: 50px;
+  margin-left: 0;
+  width: 130px;
+  border: none;
+  color: white;
+  font-weight:bold;
+  background-color: #1fad95;
+  cursor: pointer;
+}
+
+#subscribe #div-form button:hover{
+  background-color: purple;
+  color: #1fad95;
+}
+
 /******* FOOTER *******/
 footer{
   display: flex;
   justify-content: center;
   min-height: 350px;
   width: 100%;
-  color: lightgray;
-  /* debug */
+  color: #ababab;
   background-color: #171520;
 }
 
@@ -461,16 +611,19 @@ footer h4{
   width: 50%;
   min-height: 250px;
   float: left;
-  font-size: 13px;
+  font-size: 16px;
   padding-top:50px;
-  /* debug */
-  border: solid 1px white;
+  line-height: 2em;
 }
 
 #social li{
   display: inline-block;
-  padding-right: 10px;
-  font-size: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+#social li i:hover{
+  color: white;
 }
 
 #navbar-footer{
@@ -486,12 +639,9 @@ footer h4{
 }
 
 .second ul{
-  padding-top: 26px;
+  padding-top: 40px;
 }
 
-.column li{
-  padding-top: 10px;
-}
 
 #copyright {
   min-height: calc(350px - 250px);

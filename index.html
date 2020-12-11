@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Distance Learning</title>
     <script src="https://use.fontawesome.com/617605346e.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -36,9 +37,10 @@
         <div id="logo">
           <img :src="logo" alt="">
         </div>
+
         <div id="opzioni">
-          <a :href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-          <a :href="login"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+          <a id="cart" :href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          <a id="user" :href="login"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
           <div id="search">
             <input  type="search" name="" value="" v-model="search">
             <i class="fa fa-search" aria-hidden="true"></i>
@@ -105,9 +107,22 @@
       </section>
 
       <!-- SECONDA SEZIONE upgrade your life -->
-      <section class="container">
+      <section id="upgrade" class="container">
         <div class="content-container">
-
+          <div id="upgrade-left">
+            <img id="video" src="img/upgrade-video.jpg" alt="">
+            <img id="youtube" src="img/icon-youtube-play.png" alt="">
+            <img id="up-shape07" src="img/shape07.png" alt="">
+            <img id="up-shape05" src="img/shape05.png" alt="">
+          </div>
+          <div id="upgrade-right">
+            <div class="text-sections">
+              <h4>HOW WE WORK</h4>
+              <h2>Upgrade Your Skills <span class="lighter">Upgrade Your Life</span> Us?</h2>
+              <p>Opening up more opportunities in front of you to get the ticket to more enjoyable door in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every single stage of learning.</p>
+              <a href="#"><strong>Download free guidebook</strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
 
       </section >
@@ -149,12 +164,12 @@
                 <span><i class="fa fa-user-o" aria-hidden="true"></i>62 Students</span>
               </div>
             </div>
-            <div id="circle">
-              <i class="fas fa-circle-o active first"></i>
-              <i class="fas fa-circle-o"></i>
-              <i class="fas fa-circle-o"></i>
-              <i class="fas fa-circle-o last"></i>
-            </div>
+          </div>
+          <div id="circle">
+            <i class="fas fa-circle-o active first"></i>
+            <i class="fas fa-circle-o"></i>
+            <i class="fas fa-circle-o"></i>
+            <i class="fas fa-circle-o last"></i>
           </div>
 
           <div class="moreinfo">
@@ -204,20 +219,60 @@
 
       </section>
 
-      <!-- sezione post blog -->
-      <section class="container">
+      <!-- SESTA SEZIONE post blog -->
+      <section id="blog" class="container">
         <div class="content-container">
-
+          <div class="text-sections titolo">
+            <h4>READ FOR MORE JOYMENT</h4>
+            <h2>Latest From <span class="lighter">Our Blogs</span> </h2>
+          </div>
+          <div id="post-blog">
+            <div class="card">
+              <img src="img/artist03.jpeg" alt="">
+              <div class="description">
+                <h3>ARTIST</h3>
+                <h5>Brush Strokes Energize Trees in Paintings</h5>
+                <span><i class="fa fa-calendar-o" aria-hidden="true"></i></i>May 15,2020</span>
+                <span><i class="fa fa-eye" aria-hidden="true"></i></i>688 views</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/artist01.jpg" alt="">
+              <div class="description">
+                <h3>ARTIST</h3>
+                <h5>Pocket-Sized Notebooks Hold Miniature Paintings</h5>
+                <span><i class="fa fa-calendar-o" aria-hidden="true"></i></i>May 15,2020</span>
+                <span><i class="fa fa-eye" aria-hidden="true"></i></i>603 views</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/artist02.jpg" alt="">
+              <div class="description">
+                <h3>ARTIST</h3>
+                <h5>Connections Between Self-Portraits and Identity</h5>
+                <span><i class="fa fa-calendar-o" aria-hidden="true"></i></i>May 15,2020</span>
+                <span><i class="fa fa-eye" aria-hidden="true"></i></i>397 views</span>
+              </div>
+            </div>
+          </div>
         </div>
 
       </section>
 
-      <!-- sezione subscribe -->
-      <section id="subscribe-form">
+      <!-- SETTIMA SEZIONE FORM -->
+      <section id="subscribe" class="container">
         <div class="content-container">
-
+          <div class="text-sections titolo">
+            <h2>Subscribe <span class="lighter">Newsletter</span> </h2>
+            <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+          </div>
+          <div id="div-form">
+            <form>
+              <input type="text" name="" value="" placeholder="Enter your email">
+              <button type="button" name="button">Subscribe</button>
+            </form>
+          </div>
         </div>
-
       </section>
 
     </main> <!--FINE PARTE CENTRALE-->

@@ -179,7 +179,7 @@ var footer= new Vue({
         link:"#"
       },
       {
-        icon:"fa fa-twitter-square",
+        icon:"fa fa-twitter",
         link:"#"
       },
       {
