@@ -20,16 +20,18 @@
 
         <nav id="nav-menu">
           <ul>
-            <li class="lidrop" v-for="item in menu">
+            <li class="lidrop" v-for="(item, index) in menu" @click="showDrop(index)" >
               <a :href="item.link">{{item.text}}</a>
               <i class="fa fa-chevron-down" aria-hidden="true"></i>
-              <nav class="dropdown">
+
+              <nav class="dropdown" :class="{active: index===indexMenu}" @mouseleave="hideDrop">
                 <ul>
                   <li v-for="drop in item.dropdown">
-                    <a :href="drop.droplink" >{{drop.droptext}}</a>
+                    <a :href="drop.droplink">{{drop.droptext}}</a>
                   </li>
                 </ul>
               </nav>
+
             </li>
           </ul>
         </nav>
@@ -166,7 +168,7 @@
             </div>
           </div>
           <div id="circle">
-            <i class="fas fa-circle-o active first"></i>
+            <i class="fas fa-circle-o first"></i>
             <i class="fas fa-circle-o"></i>
             <i class="fas fa-circle-o"></i>
             <i class="fas fa-circle-o last"></i>

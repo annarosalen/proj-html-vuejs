@@ -5,6 +5,8 @@ var header= new Vue({
     cart: "#",
     login: "#",
     logo: "img/dark-logo.png",
+    act: "",
+    indexMenu: 0,
     menu: [
       {
         text: "Home",
@@ -115,6 +117,22 @@ var header= new Vue({
         ]
       }
     ]
+  },
+
+  mounted: function(){
+    this.indexMenu = "";
+  },
+
+  methods: {
+
+    showDrop:function(index){
+      this.indexMenu = index;
+    },
+
+    hideDrop: function(){
+      this.indexMenu = "";
+    }
+
   }
 
 });
