@@ -172,6 +172,7 @@ content: attr(datacount);
 font-weight: 500;
 font-size: 10px;
 line-height: 16px;
+text-align: center;
 }
 
 #search input{

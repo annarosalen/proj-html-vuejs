@@ -5,7 +5,6 @@
     <title>Distance Learning</title>
     <script src="https://use.fontawesome.com/617605346e.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -44,8 +43,8 @@
         </div>
 
         <div id="opzioni">
-          <a id="cart" :href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-          <a id="user" :href="login" datacount="0"><i class="fa fa-user-circle" aria-hidden="true" ></i></a>
+          <a id="cart" :href="cart" datacount="0"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          <a id="user" :href="login"><i class="fa fa-user-circle" aria-hidden="true" ></i></a>
           <div id="search">
             <input  type="search" v-model="search" placeholder="Search...">
             <i class="fa fa-search" aria-hidden="true"></i>
