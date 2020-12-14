@@ -5,7 +5,6 @@ var header= new Vue({
     cart: "#",
     login: "#",
     logo: "img/dark-logo.png",
-    act: "",
     indexMenu: 0,
     menu: [
       {
@@ -72,7 +71,7 @@ var header= new Vue({
           },
           {
             droptext: "Opzione 2",
-            link: "#",
+            droplink: "#",
           },
           {
             droptext: "Opzione 3",
@@ -90,7 +89,7 @@ var header= new Vue({
           },
           {
             droptext: "Opzione 2",
-            link: "#",
+            droplink: "#",
           },
           {
             droptext: "Opzione 3",
