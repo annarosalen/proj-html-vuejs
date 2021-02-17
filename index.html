@@ -142,56 +142,25 @@
             <h4>JOIN MAXCOACH AT BEST</h4>
             <h2>Latest Online <span class="lighter">Courses</span> </h2>
           </div>
-          <div id="carousel">
 
-            <!-- inserimento Vue -->
-            <!-- <div class="card" v-for="item in cards">
-              <img :src="item.img" alt="">
-              <div class="description">
-                <h3>{{item.price}}</h3>
-                <h5>{{item.title}}</h5>
-                <span><i class="fa fa-file-text-o" aria-hidden="true"></i>{{item.lessons}}</span>
-                <span><i class="fa fa-user-o" aria-hidden="true"></i>item.students</span>
-              </div>
-            </div> -->
-
-            <div class="card">
-              <img src="img/course02.jpg" alt="">
-              <div class="description">
-                <h3>$40.00</h3>
-                <h5>Learning to Write as a Professional Author</h5>
-                <span><i class="fa fa-file-text-o" aria-hidden="true"></i>20 Lessons</span>
-                <span><i class="fa fa-user-o" aria-hidden="true"></i>50 Students</span>
+          <div class="carousel" >
+            <i class="fa fa-chevron-left" @click="scrollLeft" aria-hidden="true"></i>
+            <div class= "container-cards" ref="carousel">
+              <div class="card" v-for="item in cards">
+                <div class="cont-img">
+                  <img :src="item.img" alt="">
+                </div>
+                
+                <div class="description">
+                  <h3>{{item.price}}</h3>
+                  <h5>{{item.title}}</h5>
+                  <span><i class="fa fa-file-text-o" aria-hidden="true"></i>{{item.lessons}}</span>
+                  <span><i class="fa fa-user-o" aria-hidden="true"></i>item.students</span>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img src="img/course01.jpg" alt="">
-              <div class="description">
-                <h3>$0.00</h3>
-                <h5>Customer-centric Info-Tech Strategies</h5>
-                <span><i class="fa fa-file-text-o" aria-hidden="true"></i>24 Lessons</span>
-                <span><i class="fa fa-user-o" aria-hidden="true"></i>769 Students</span>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/course03.jpg" alt="">
-              <div class="description">
-                <h3>$19.00</h3>
-                <h5>Open Programming Courses for Everyone: Python</h5>
-                <span><i class="fa fa-file-text-o" aria-hidden="true"></i>17 Lessons</span>
-                <span><i class="fa fa-user-o" aria-hidden="true"></i>62 Students</span>
-              </div>
-            </div>
-
+            <i class="fa fa-chevron-right" @click="scrollRight"  aria-hidden="true"></i>
           </div> <!--fine carousel-->
-
-          <div id="circle">
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true"></i>
-          </div>
 
           <div class="moreinfo">
             <p>Control your personal preference settings to get notified about appropriate courses.</p>

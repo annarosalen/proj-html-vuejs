@@ -141,9 +141,10 @@ var header= new Vue({
 
 // **************************************************************
 // inserimento caraousel dinamico da finire
-var carousel = new Vue({
+new Vue({
   el:"#courses",
   data: {
+    indexCard: 0,
     cards: [
       {
         img: "img/course02.jpg",
@@ -183,7 +184,21 @@ var carousel = new Vue({
     ]
   },
 
-  method: {
+  methods: {
+    
+    scrollRight: function(){
+      let carousel = this.$refs['carousel'];
+
+      carousel.scrollLeft += carousel.offsetWidth;
+
+    },
+
+    scrollLeft: function(){
+      let carousel = this.$refs['carousel'];
+
+      carousel.scrollLeft -= carousel.offsetWidth;
+
+    }
   }
 });
 
